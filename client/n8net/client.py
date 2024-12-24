@@ -1,5 +1,7 @@
 import os
 
+# gcc -shared -o socket_socks5.so -fPIC socket_socks5.c
+# socks5_lib = ctypes.CDLL('./socket_socks5.so')
 
 _PROXY_SERVER = os.getenv("N8_SERVER")
 
