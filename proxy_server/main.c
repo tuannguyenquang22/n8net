@@ -151,10 +151,19 @@ void *handle_client(void *arg) {
             target_addr.sin_family = AF_INET;
             int addr_len = 0;
 
-            print_hex(buffer, n);
-
             switch(buffer[3]) {
                 case ATYP_IPV4: {
+                    char ip_str[INET_ADDRSTRLEN];
+                    inet_ntop(AF_INET, &buffer[4], ip_str, INET_ADDRSTRLEN);
+
+                    if (is_blacklisted(ip_str)) {
+                        perror("Connection to blacklisted IP denied");
+                        unsigned char reply[] = {SOCKS5_VERSION, 0x02, 0x00, ATYP_IPV4, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00};
+                        send(client_sock, reply, sizeof(reply), 0);
+                        close(client_sock);
+                        return NULL;
+                    }
+
                     memcpy(&target_addr.sin_addr.s_addr, &buffer[4], 4);
                     target_addr.sin_port = ntohs(*(uint16_t *)&buffer[8]);
                     addr_len = 10;
@@ -166,6 +175,18 @@ void *handle_client(void *arg) {
                     memcpy(domain, &buffer[5], domain_len);
                     domain[domain_len] = '\0';
                     uint16_t port = ntohs(*(uint16_t *)&buffer[5 + domain_len]);
+
+                    printf("Connecting to domain: %s\n", domain);
+
+                    if (is_blacklisted(domain)) {
+                        perror("Connection to blacklisted domain denied");
+                        unsigned char reply[] = {SOCKS5_VERSION, 0x02, 0x00, ATYP_DOMAINNAME, domain_len};
+                        memcpy(&reply[5], domain, domain_len);
+                        memcpy(&reply[5 + domain_len], "\x00\x00", 2);
+                        send(client_sock, reply, 5 + domain_len + 2, 0);
+                        close(client_sock);
+                        return NULL;
+                    }
 
                     struct hostent *he = gethostbyname(domain);
                     if (he == NULL) {
@@ -413,3 +434,20 @@ void print_hex(const unsigned char *buffer, size_t length) {
     printf("\n");
 }
 
+int is_blacklisted(const char *addr) {
+    FILE *fp = fopen("blacklist.txt", "r");
+    if (!fp) {
+        perror("Cannot open blacklist.txt");
+        return 0;
+    }
+    char line[256];
+    while (fgets(line, sizeof(line), fp)) {
+        line[strcspn(line, "\n")] = '\0';
+        if (strcmp(line, addr) == 0) {
+            fclose(fp);
+            return 1;
+        }
+    }
+    fclose(fp);
+    return 0;
+}
