@@ -16,7 +16,7 @@
 #define CMD_UDP_ASSOCIATE 0x03
 #define ATYP_IPV4 0x01
 #define ATYP_DOMAINNAME 0x03
-#define BUFFER_SIZE 4096
+#define BUFFER_SIZE 65536
 
 typedef struct {
     int client_sock;
