@@ -8,6 +8,7 @@
 #include <pthread.h>
 
 #define SOCKS5_VERSION 0x05
+#define METHOD_NO_AUTHENTICATION 0x00
 #define METHOD_USERNAME_PASSWORD 0x02
 #define METHOD_NO_ACCEPTABLE 0xFF
 #define CMD_CONNECT 0x01
@@ -114,19 +115,19 @@ void *handle_client(void *arg) {
         return NULL;
     }
 
-    unsigned char response[2] = {SOCKS5_VERSION, 0x02};
+    unsigned char response[2] = {SOCKS5_VERSION, METHOD_NO_AUTHENTICATION};
     if (send(client_sock, response, 2, 0) != 2) {
         perror("Send failed");
         close(client_sock);
         return NULL;
     }
 
-    // Authenticate USERNAME/PASSWORD
-    if (!authenticate(client_sock)) {
-        fprintf(stderr, "Authentication failed\n");
-        close(client_sock);
-        return NULL;
-    }
+    // // Authenticate USERNAME/PASSWORD
+    // if (!authenticate(client_sock)) {
+    //     fprintf(stderr, "Authentication failed\n");
+    //     close(client_sock);
+    //     return NULL;
+    // }
 
     if ((n = recv(client_sock, buffer, BUFFER_SIZE, 0)) <= 0) {
         perror("Receive failed");
