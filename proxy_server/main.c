@@ -216,6 +216,8 @@ void *handle_client(void *arg) {
             memcpy(&reply[4], &addr.sin_addr.s_addr, 4);
             memcpy(&reply[8], &addr.sin_port, 2);
             send(client_sock, reply, sizeof(reply), 0);
+            
+            print_hex(reply, sizeof(reply));
 
             while (1) {
                 fd_set fds;
