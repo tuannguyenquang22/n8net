@@ -5,6 +5,7 @@
 #include <arpa/inet.h>
 #include <netinet/in.h>
 #include <errno.h>
+#include <netdb.h>
 #include <pthread.h>
 
 #define SOCKS5_VERSION 0x05
@@ -16,6 +17,7 @@
 #define CMD_UDP_ASSOCIATE 0x03
 #define ATYP_IPV4 0x01
 #define ATYP_DOMAINNAME 0x03
+#define ATYP_IPV6 0x04
 #define BUFFER_SIZE 65536
 
 typedef struct {
@@ -145,9 +147,46 @@ void *handle_client(void *arg) {
         case CMD_CONNECT: {
             // Handle CMD_CONNECT
             struct sockaddr_in target_addr;
+            memset(&target_addr, 0, sizeof(target_addr));
             target_addr.sin_family = AF_INET;
-            memcpy(&target_addr.sin_addr.s_addr, &buffer[4], 4);
-            target_addr.sin_port = *(uint16_t *)&buffer[8];
+            int addr_len = 0;
+
+            switch(buffer[3]) {
+                case ATYP_IPV4: {
+                    memcpy(&target_addr.sin_addr.s_addr, &buffer[4], 4);
+                    target_addr.sin_port = ntohs(*(uint16_t *)&buffer[8]);
+                    addr_len = 10;
+                    break;
+                }
+                case ATYP_DOMAINNAME: {
+                    uint8_t domain_len = buffer[4];
+                    char domain[256];
+                    memcpy(domain, &buffer[5], domain_len);
+                    domain[domain_len] = '\0';
+                    uint16_t port = ntohs(*(uint16_t *)&buffer[5 + domain_len]);
+
+                    struct hostent *he = gethostbyname(domain);
+                    if (he == NULL) {
+                        perror("DNS resolution failed");
+                        unsigned char reply[10] = {SOCKS5_VERSION, 0x04};
+                        send(client_sock, reply, sizeof(reply), 0);
+                        close(client_sock);
+                        return NULL;
+                    }
+
+                    memcpy(&target_addr.sin_addr.s_addr, he->h_addr_list[0], he->h_length);
+                    target_addr.sin_port = htons(port);
+                    addr_len = 7 + domain_len;
+                    break;
+                }
+                case ATYP_IPV6: {
+                    perror("IPv6 not supported");
+                    unsigned char reply[10] = {SOCKS5_VERSION, 0x08};
+                    send(client_sock, reply, sizeof(reply), 0);
+                    close(client_sock);
+                    return NULL;
+                }
+            }
 
             int remote_sock = socket(AF_INET, SOCK_STREAM, 0);
             if (remote_sock < 0 || connect(remote_sock, (struct sockaddr *)&target_addr, sizeof(target_addr)) < 0) {
@@ -158,7 +197,22 @@ void *handle_client(void *arg) {
                 return NULL;
             }
 
-            unsigned char reply[] = {SOCKS5_VERSION, 0x00, 0x00, ATYP_IPV4, 0, 0, 0, 0, 0, 0};
+            struct sockaddr_in addr;
+            socklen_t addr_len_out = sizeof(addr);
+            if (getsockname(remote_sock, (struct sockaddr *)&addr, &addr_len_out) < 0) {
+                perror("Getsockname failed");
+                close(client_sock);
+                close(remote_sock);
+                return NULL;
+            }
+
+            unsigned char reply[10];
+            reply[0] = SOCKS5_VERSION;
+            reply[1] = 0x00;
+            reply[2] = 0x00;
+            reply[3] = ATYP_IPV4;
+            memcpy(&reply[4], &addr.sin_addr.s_addr, 4);
+            memcpy(&reply[8], &addr.sin_port, 2);
             send(client_sock, reply, sizeof(reply), 0);
 
             while (1) {
@@ -208,7 +262,7 @@ void *handle_client(void *arg) {
             socklen_t addr_len = sizeof(actual_addr);
             getsockname(bind_sock, (struct sockaddr *)&actual_addr, &addr_len);
 
-            unsigned char reply[10] = {SOCKS5_VERSION, 0x00, 0x00, ATYP_IPV4};
+            unsigned char reply[20] = {SOCKS5_VERSION, 0x00, 0x00, ATYP_IPV4};
 
             memcpy(&reply[4], &actual_addr.sin_addr.s_addr, 4);
             memcpy(&reply[8], &actual_addr.sin_port, 2);
@@ -262,7 +316,7 @@ void *handle_client(void *arg) {
             socklen_t addr_len = sizeof(actual_addr);
             getsockname(udp_sock, (struct sockaddr *)&actual_addr, &addr_len);
 
-            unsigned char reply[10] = {SOCKS5_VERSION, 0x00, 0x00, ATYP_IPV4};
+            unsigned char reply[20] = {SOCKS5_VERSION, 0x00, 0x00, ATYP_IPV4};
 
             memcpy(&reply[4], &actual_addr.sin_addr.s_addr, sizeof(actual_addr.sin_addr.s_addr));
             memcpy(&reply[8], &actual_addr.sin_port, sizeof(actual_addr.sin_port));
