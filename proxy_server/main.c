@@ -151,6 +151,8 @@ void *handle_client(void *arg) {
             target_addr.sin_family = AF_INET;
             int addr_len = 0;
 
+            print_hex(buffer, n);
+
             switch(buffer[3]) {
                 case ATYP_IPV4: {
                     memcpy(&target_addr.sin_addr.s_addr, &buffer[4], 4);
