@@ -114,7 +114,7 @@ void *handle_client(void *arg) {
         return NULL;
     }
 
-    unsigned char response[2] = {SOCKS5_VERSION, METHOD_USERNAME_PASSWORD};
+    unsigned char response[2] = {SOCKS5_VERSION, 0x02};
     if (send(client_sock, response, 2, 0) != 2) {
         perror("Send failed");
         close(client_sock);
@@ -299,6 +299,7 @@ int authenticate(int client_sock) {
         return 0;
     }
 
+    unsigned char version = buffer[0];
     unsigned char username_len = buffer[1];
     char username[256] = {0};
     strncpy(username, (char *)&buffer[2], username_len);
@@ -306,6 +307,11 @@ int authenticate(int client_sock) {
     unsigned char password_len = buffer[2 + username_len];
     char password[256] = {0};
     strncpy(password, (char *)&buffer[3 + username_len], password_len);
+
+    if (version != 0x01) {
+        fprintf(stderr, "Unsupported authentication version\n");
+        return 0;
+    }
 
     if (validate_user(username, password)) {
         unsigned char response[2] = {0x01, 0x00};
@@ -347,3 +353,4 @@ void print_hex(const unsigned char *buffer, size_t length) {
     }
     printf("\n");
 }
+
