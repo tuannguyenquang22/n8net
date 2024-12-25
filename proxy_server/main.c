@@ -28,6 +28,7 @@ void *handle_client(void *arg);
 int authenticate(int client_sock);
 int validate_user(const char *username, const char *password);
 void print_hex(const unsigned char *buffer, size_t length);
+int is_blacklisted(const char *addr);
 
 int main(int argc, char *argv[]) {
     if (argc != 2) {
