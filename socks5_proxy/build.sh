@@ -1,0 +1,1 @@
+gcc -o socks5 server.c -lpthread -Wall

@@ -1,0 +1,352 @@
+[Thu Jan 16 09:48:59 2025] [8288358208] Info: Starting N8NET SOCKS5 proxy server on port 1080
+[Thu Jan 16 09:48:59 2025] [8288358208] Info: Listening on port 1080 ...
+[Thu Jan 16 09:49:04 2025] [6164574208] Info: SOCKS handshake: VER=5, NMETHODS=1
+[Thu Jan 16 09:49:04 2025] [6164000768] Info: SOCKS handshake: VER=5, NMETHODS=1
+[Thu Jan 16 09:49:04 2025] [6164574208] Info: Method AUTH 0
+[Thu Jan 16 09:49:04 2025] [6164000768] Info: Method AUTH 0
+[Thu Jan 16 09:49:04 2025] [6165147648] Info: SOCKS handshake: VER=5, NMETHODS=1
+[Thu Jan 16 09:49:04 2025] [6165147648] Info: Method AUTH 0
+[Thu Jan 16 09:49:04 2025] [6165147648] Info: Command: VER=5 CMD=1 RSV=0 ATYP=1
+[Thu Jan 16 09:49:04 2025] [6164574208] Info: Command: VER=5 CMD=1 RSV=0 ATYP=1
+[Thu Jan 16 09:49:04 2025] [6164000768] Info: Command: VER=5 CMD=1 RSV=0 ATYP=1
+[Thu Jan 16 09:49:04 2025] [6165147648] Info: IP 91.108.56.145
+[Thu Jan 16 09:49:04 2025] [6164574208] Info: IP 91.108.56.145
+[Thu Jan 16 09:49:04 2025] [6164574208] Info: Port 443
+[Thu Jan 16 09:49:04 2025] [6165147648] Info: Port 443
+[Thu Jan 16 09:49:04 2025] [6164000768] Info: IP 91.108.56.145
+[Thu Jan 16 09:49:04 2025] [6164000768] Info: Port 443
+[Thu Jan 16 09:49:04 2025] [6165147648] Info: Piping data between two sockets...
+[Thu Jan 16 09:49:04 2025] [6164574208] Info: Piping data between two sockets...
+[Thu Jan 16 09:49:04 2025] [6164000768] Info: Piping data between two sockets...
+[Thu Jan 16 09:49:04 2025] [6164000768] Info: Socket pipe end
+[Thu Jan 16 09:49:04 2025] [6165147648] Info: Socket pipe end
+[Thu Jan 16 09:49:04 2025] [6164574208] Info: Socket pipe end
+[Thu Jan 16 09:51:14 2025] [6164000768] Info: SOCKS handshake: VER=5, NMETHODS=1
+[Thu Jan 16 09:51:14 2025] [6164574208] Info: SOCKS handshake: VER=5, NMETHODS=1
+[Thu Jan 16 09:51:14 2025] [6165147648] Info: SOCKS handshake: VER=5, NMETHODS=1
+[Thu Jan 16 09:51:14 2025] [6164000768] Info: Method AUTH 0
+[Thu Jan 16 09:51:14 2025] [6164574208] Info: Method AUTH 0
+[Thu Jan 16 09:51:14 2025] [6165147648] Info: Method AUTH 0
+[Thu Jan 16 09:51:14 2025] [6164000768] Info: Command: VER=5 CMD=1 RSV=0 ATYP=1
+[Thu Jan 16 09:51:14 2025] [6164574208] Info: Command: VER=5 CMD=1 RSV=0 ATYP=1
+[Thu Jan 16 09:51:14 2025] [6164574208] Info: IP 91.108.56.145
+[Thu Jan 16 09:51:14 2025] [6164000768] Info: IP 91.108.56.145
+[Thu Jan 16 09:51:14 2025] [6165147648] Info: Command: VER=5 CMD=1 RSV=0 ATYP=1
+[Thu Jan 16 09:51:14 2025] [6164574208] Info: Port 443
+[Thu Jan 16 09:51:14 2025] [6164000768] Info: Port 443
+[Thu Jan 16 09:51:14 2025] [6165147648] Info: IP 0.0.0.0
+[Thu Jan 16 09:51:14 2025] [6165147648] Info: Port 443
+[Thu Jan 16 09:51:14 2025] [6165147648] Critical: Failed to connect to remote server (IPv4) - Connection refused
+[Thu Jan 16 09:51:14 2025] [6164000768] Info: Piping data between two sockets...
+[Thu Jan 16 09:51:14 2025] [6164574208] Info: Piping data between two sockets...
+[Thu Jan 16 09:51:15 2025] [6164574208] Critical: Socket pipe end - Connection reset by peer
+[Thu Jan 16 09:51:15 2025] [6164000768] Info: Socket pipe end
+[Thu Jan 16 09:51:16 2025] [6164000768] Info: SOCKS handshake: VER=5, NMETHODS=1
+[Thu Jan 16 09:51:16 2025] [6164000768] Info: Method AUTH 0
+[Thu Jan 16 09:51:16 2025] [6164574208] Info: SOCKS handshake: VER=5, NMETHODS=1
+[Thu Jan 16 09:51:16 2025] [6165721088] Info: SOCKS handshake: VER=5, NMETHODS=1
+[Thu Jan 16 09:51:16 2025] [6165721088] Info: Method AUTH 0
+[Thu Jan 16 09:51:16 2025] [6165147648] Info: SOCKS handshake: VER=5, NMETHODS=1
+[Thu Jan 16 09:51:16 2025] [6164574208] Info: Method AUTH 0
+[Thu Jan 16 09:51:16 2025] [6166294528] Info: SOCKS handshake: VER=5, NMETHODS=1
+[Thu Jan 16 09:51:16 2025] [6165147648] Info: Method AUTH 0
+[Thu Jan 16 09:51:16 2025] [6166294528] Info: Method AUTH 0
+[Thu Jan 16 09:51:16 2025] [6169161728] Info: SOCKS handshake: VER=5, NMETHODS=1
+[Thu Jan 16 09:51:16 2025] [6166867968] Info: SOCKS handshake: VER=5, NMETHODS=1
+[Thu Jan 16 09:51:16 2025] [6166867968] Info: Method AUTH 0
+[Thu Jan 16 09:51:16 2025] [6169161728] Info: Method AUTH 0
+[Thu Jan 16 09:51:16 2025] [6168014848] Info: SOCKS handshake: VER=5, NMETHODS=1
+[Thu Jan 16 09:51:16 2025] [6168014848] Info: Method AUTH 0
+[Thu Jan 16 09:51:16 2025] [6169735168] Info: SOCKS handshake: VER=5, NMETHODS=1
+[Thu Jan 16 09:51:16 2025] [6164000768] Info: Command: VER=5 CMD=1 RSV=0 ATYP=1
+[Thu Jan 16 09:51:16 2025] [6167441408] Info: SOCKS handshake: VER=5, NMETHODS=1
+[Thu Jan 16 09:51:16 2025] [6167441408] Info: Method AUTH 0
+[Thu Jan 16 09:51:16 2025] [6169735168] Info: Method AUTH 0
+[Thu Jan 16 09:51:16 2025] [6164000768] Info: IP 149.154.175.56
+[Thu Jan 16 09:51:16 2025] [6168588288] Info: SOCKS handshake: VER=5, NMETHODS=1
+[Thu Jan 16 09:51:16 2025] [6168588288] Info: Method AUTH 0
+[Thu Jan 16 09:51:16 2025] [6164000768] Info: Port 443
+[Thu Jan 16 09:51:16 2025] [6164574208] Info: Command: VER=5 CMD=1 RSV=0 ATYP=1
+[Thu Jan 16 09:51:16 2025] [6164574208] Info: IP 91.108.56.145
+[Thu Jan 16 09:51:16 2025] [6164574208] Info: Port 443
+[Thu Jan 16 09:51:16 2025] [6165147648] Info: Command: VER=5 CMD=1 RSV=0 ATYP=1
+[Thu Jan 16 09:51:16 2025] [6165147648] Info: IP 91.108.56.145
+[Thu Jan 16 09:51:16 2025] [6165147648] Info: Port 443
+[Thu Jan 16 09:51:16 2025] [6165721088] Info: Command: VER=5 CMD=1 RSV=0 ATYP=1
+[Thu Jan 16 09:51:16 2025] [6166294528] Info: Command: VER=5 CMD=1 RSV=0 ATYP=1
+[Thu Jan 16 09:51:16 2025] [6166867968] Info: Command: VER=5 CMD=1 RSV=0 ATYP=1
+[Thu Jan 16 09:51:16 2025] [6169735168] Info: Command: VER=5 CMD=1 RSV=0 ATYP=1
+[Thu Jan 16 09:51:16 2025] [6168014848] Info: Command: VER=5 CMD=1 RSV=0 ATYP=1
+[Thu Jan 16 09:51:16 2025] [6166294528] Info: IP 149.154.175.56
+[Thu Jan 16 09:51:16 2025] [6165721088] Info: IP 149.154.175.56
+[Thu Jan 16 09:51:16 2025] [6165721088] Info: Port 443
+[Thu Jan 16 09:51:16 2025] [6166867968] Info: IP 149.154.175.56
+[Thu Jan 16 09:51:16 2025] [6166867968] Info: Port 443
+[Thu Jan 16 09:51:16 2025] [6169735168] Info: IP 149.154.167.222
+[Thu Jan 16 09:51:16 2025] [6169735168] Info: Port 443
+[Thu Jan 16 09:51:16 2025] [6168014848] Info: IP 91.108.56.145
+[Thu Jan 16 09:51:16 2025] [6166294528] Info: Port 443
+[Thu Jan 16 09:51:16 2025] [6168588288] Info: Command: VER=5 CMD=1 RSV=0 ATYP=1
+[Thu Jan 16 09:51:16 2025] [6167441408] Info: Command: VER=5 CMD=1 RSV=0 ATYP=1
+[Thu Jan 16 09:51:16 2025] [6169161728] Info: Command: VER=5 CMD=1 RSV=0 ATYP=1
+[Thu Jan 16 09:51:16 2025] [6169161728] Info: IP 91.108.56.145
+[Thu Jan 16 09:51:16 2025] [6169161728] Info: Port 443
+[Thu Jan 16 09:51:16 2025] [6167441408] Info: IP 149.154.167.222
+[Thu Jan 16 09:51:16 2025] [6168014848] Info: Port 443
+[Thu Jan 16 09:51:16 2025] [6168588288] Info: IP 149.154.167.222
+[Thu Jan 16 09:51:16 2025] [6168588288] Info: Port 443
+[Thu Jan 16 09:51:16 2025] [6167441408] Info: Port 443
+[Thu Jan 16 09:51:16 2025] [6165147648] Info: Piping data between two sockets...
+[Thu Jan 16 09:51:16 2025] [6164574208] Info: Piping data between two sockets...
+[Thu Jan 16 09:51:16 2025] [6169161728] Info: Piping data between two sockets...
+[Thu Jan 16 09:51:16 2025] [6168014848] Info: Piping data between two sockets...
+[Thu Jan 16 09:51:16 2025] [6169735168] Info: Piping data between two sockets...
+[Thu Jan 16 09:51:16 2025] [6168588288] Info: Piping data between two sockets...
+[Thu Jan 16 09:51:16 2025] [6167441408] Info: Piping data between two sockets...
+[Thu Jan 16 09:51:16 2025] [6165721088] Info: Piping data between two sockets...
+[Thu Jan 16 09:51:16 2025] [6166294528] Info: Piping data between two sockets...
+[Thu Jan 16 09:51:16 2025] [6166867968] Info: Piping data between two sockets...
+[Thu Jan 16 09:51:16 2025] [6164000768] Info: Piping data between two sockets...
+[Thu Jan 16 09:51:32 2025] [6170308608] Info: SOCKS handshake: VER=5, NMETHODS=1
+[Thu Jan 16 09:51:32 2025] [6170308608] Info: Method AUTH 0
+[Thu Jan 16 09:51:32 2025] [6171455488] Info: SOCKS handshake: VER=5, NMETHODS=1
+[Thu Jan 16 09:51:32 2025] [6170882048] Info: SOCKS handshake: VER=5, NMETHODS=1
+[Thu Jan 16 09:51:32 2025] [6171455488] Info: Method AUTH 0
+[Thu Jan 16 09:51:32 2025] [6170882048] Info: Method AUTH 0
+[Thu Jan 16 09:51:32 2025] [6170308608] Info: Command: VER=5 CMD=1 RSV=0 ATYP=1
+[Thu Jan 16 09:51:32 2025] [6170308608] Info: IP 128.216.128.0
+[Thu Jan 16 09:51:32 2025] [6170308608] Info: Port 443
+[Thu Jan 16 09:51:32 2025] [6170882048] Info: Command: VER=5 CMD=1 RSV=0 ATYP=1
+[Thu Jan 16 09:51:32 2025] [6171455488] Info: Command: VER=5 CMD=1 RSV=0 ATYP=1
+[Thu Jan 16 09:51:32 2025 ] [6170882048] Info: IP 91.108.56.145
+[Thu Jan 16 09:51:32 2025] [6171455488] Info: IP 91.108.56.145
+[Thu Jan 16 09:51:32 2025] [6171455488] Info: Port 443
+[Thu Jan 16 09:51:32 2025] [6170882048] Info: Port 443
+[Thu Jan 16 09:51:32 2025] [6170882048] Info: Piping data between two sockets...
+[Thu Jan 16 09:51:32 2025] [6171455488] Info: Piping data between two sockets...
+[Thu Jan 16 09:51:33 2025] [6170882048] Info: Socket pipe end
+[Thu Jan 16 09:51:33 2025] [6171455488] Info: Socket pipe end
+[Thu Jan 16 09:51:34 2025] [6170882048] Info: SOCKS handshake: VER=5, NMETHODS=1
+[Thu Jan 16 09:51:34 2025] [6171455488] Info: SOCKS handshake: VER=5, NMETHODS=1
+[Thu Jan 16 09:51:34 2025] [6172028928] Info: SOCKS handshake: VER=5, NMETHODS=1
+[Thu Jan 16 09:51:34 2025] [6170882048] Info: Method AUTH 0
+[Thu Jan 16 09:51:34 2025] [6171455488] Info: Method AUTH 0
+[Thu Jan 16 09:51:34 2025] [6172028928] Info: Method AUTH 0
+[Thu Jan 16 09:51:34 2025] [6170882048] Info: Command: VER=5 CMD=1 RSV=0 ATYP=1
+[Thu Jan 16 09:51:34 2025] [6171455488] Info: Command: VER=5 CMD=1 RSV=0 ATYP=1
+[Thu Jan 16 09:51:34 2025] [6172028928] Info: Command: VER=5 CMD=1 RSV=0 ATYP=1
+[Thu Jan 16 09:51:34 2025] [6170882048] Info: IP 128.216.128.0
+[Thu Jan 16 09:51:34 2025] [6171455488] Info: IP 91.108.56.145
+[Thu Jan 16 09:51:34 2025] [6171455488] Info: Port 443
+[Thu Jan 16 09:51:34 2025] [6170882048] Info: Port 443
+[Thu Jan 16 09:51:34 2025] [6172028928] Info: IP 91.108.56.145
+[Thu Jan 16 09:51:34 2025] [6172028928] Info: Port 443
+[Thu Jan 16 09:51:35 2025] [6172028928] Info: Piping data between two sockets...
+[Thu Jan 16 09:51:35 2025] [6171455488] Info: Piping data between two sockets...
+[Thu Jan 16 09:51:35 2025] [6172028928] Info: Socket pipe end
+[Thu Jan 16 09:51:35 2025] [6171455488] Info: Socket pipe end
+[Thu Jan 16 09:52:00 2025] [6165147648] Info: Socket pipe end
+[Thu Jan 16 09:52:00 2025] [6166294528] Info: Socket pipe end
+[Thu Jan 16 09:52:00 2025] [6166867968] Info: Socket pipe end
+[Thu Jan 16 09:52:00 2025] [6167441408] Info: Socket pipe end
+[Thu Jan 16 09:52:00 2025] [6168588288] Info: Socket pipe end
+[Thu Jan 16 09:52:00 2025] [6169735168] Info: Socket pipe end
+[Thu Jan 16 09:52:00 2025] [6169161728] Info: Socket pipe end
+[Thu Jan 16 09:52:00 2025] [6165721088] Info: Socket pipe end
+[Thu Jan 16 09:52:00 2025] [6168014848] Info: Socket pipe end
+[Thu Jan 16 09:52:00 2025] [6164574208] Info: Socket pipe end
+[Thu Jan 16 09:52:00 2025] [6164000768] Info: Socket pipe end
+[Thu Jan 16 09:52:20 2025] [6164574208] Info: SOCKS handshake: VER=5, NMETHODS=1
+[Thu Jan 16 09:52:20 2025] [6164574208] Info: Method AUTH 0
+[Thu Jan 16 09:52:20 2025] [6164000768] Info: SOCKS handshake: VER=5, NMETHODS=1
+[Thu Jan 16 09:52:20 2025] [6164000768] Info: Method AUTH 0
+[Thu Jan 16 09:52:20 2025] [6165147648] Info: SOCKS handshake: VER=5, NMETHODS=1
+[Thu Jan 16 09:52:20 2025] [6165147648] Info: Method AUTH 0
+[Thu Jan 16 09:52:20 2025] [6166294528] Info: SOCKS handshake: VER=5, NMETHODS=1
+[Thu Jan 16 09:52:20 2025] [6165721088] Info: SOCKS handshake: VER=5, NMETHODS=1
+[Thu Jan 16 09:52:20 2025] [6165721088] Info: Method AUTH 0
+[Thu Jan 16 09:52:20 2025] [6168014848] Info: SOCKS handshake: VER=5, NMETHODS=1
+[Thu Jan 16 09:52:20 2025] [6168014848] Info: Method AUTH 0
+[Thu Jan 16 09:52:20 2025] [6168588288] Info: SOCKS handshake: VER=5, NMETHODS=1
+[Thu Jan 16 09:52:20 2025] [6168588288] Info: Method AUTH 0
+[Thu Jan 16 09:52:20 2025] [6169735168] Info: SOCKS handshake: VER=5, NMETHODS=1
+[Thu Jan 16 09:52:20 2025] [6169735168] Info: Method AUTH 0
+[Thu Jan 16 09:52:20 2025] [6167441408] Info: SOCKS handshake: VER=5, NMETHODS=1
+[Thu Jan 16 09:52:20 2025] [6167441408] Info: Method AUTH 0
+[Thu Jan 16 09:52:20 2025] [6169161728] Info: SOCKS handshake: VER=5, NMETHODS=1
+[Thu Jan 16 09:52:20 2025] [6166867968] Info: SOCKS handshake: VER=5, NMETHODS=1
+[Thu Jan 16 09:52:20 2025] [6166294528] Info: Method AUTH 0
+[Thu Jan 16 09:52:20 2025] [6169161728] Info: Method AUTH 0
+[Thu Jan 16 09:52:20 2025] [6166867968] Info: Method AUTH 0
+[Thu Jan 16 09:52:20 2025] [6164574208] Info: Command: VER=5 CMD=1 RSV=0 ATYP=1
+[Thu Jan 16 09:52:20 2025] [6164000768] Info: Command: VER=5 CMD=1 RSV=0 ATYP=1
+[Thu Jan 16 09:52:20 2025] [6164000768] Info: IP 91.108.56.145
+[Thu Jan 16 09:52:20 2025] [6164000768] Info: Port 443
+[Thu Jan 16 09:52:20 2025] [6165147648] Info: Command: VER=5 CMD=1 RSV=0 ATYP=1
+[Thu Jan 16 09:52:20 2025] [6164574208] Info: IP 91.108.56.145
+[Thu Jan 16 09:52:20 2025] [6164574208] Info: Port 443
+[Thu Jan 16 09:52:20 2025] [6165147648] Info: IP 149.154.175.56
+[Thu Jan 16 09:52:20 2025] [6165147648] Info: Port 443
+[Thu Jan 16 09:52:20 2025] [6168588288] Info: Command: VER=5 CMD=1 RSV=0 ATYP=1
+[Thu Jan 16 09:52:20 2025] [6168014848] Info: Command: VER=5 CMD=1 RSV=0 ATYP=1
+[Thu Jan 16 09:52:20 2025] [6168588288] Info: IP 149.154.167.222
+[Thu Jan 16 09:52:20 2025] [6169735168] Info: Command: VER=5 CMD=1 RSV=0 ATYP=1
+[Thu Jan 16 09:52:20 2025] [6166294528] Info: Command: VER=5 CMD=1 RSV=0 ATYP=1
+[Thu Jan 16 09:52:20 2025] [6165721088] Info: Command: VER=5 CMD=1 RSV=0 ATYP=1
+[Thu Jan 16 09:52:20 2025] [6167441408] Info: Command: VER=5 CMD=1 RSV=0 ATYP=1
+[Thu Jan 16 09:52:20 2025] [6168014848] Info: IP 91.108.56.145
+[Thu Jan 16 09:52:20 2025] [6168588288] Info: Port 443
+[Thu Jan 16 09:52:20 2025] [6169735168] Info: IP 149.154.167.222
+[Thu Jan 16 09:52:20 2025] [6169735168] Info: Port 443
+[Thu Jan 16 09:52:20 2025] [6165721088] Info: IP 149.154.175.56
+[Thu Jan 16 09:52:20 2025] [6167441408] Info: IP 91.108.56.145
+[Thu Jan 16 09:52:20 2025] [6167441408] Info: Port 443
+[Thu Jan 16 09:52:20 2025] [6166294528] Info: IP 149.154.175.56
+[Thu Jan 16 09:52:20 2025] [6166294528] Info: Port 443
+[Thu Jan 16 09:52:20 2025] [6168014848] Info: Port 443
+[Thu Jan 16 09:52:20 2025] [6165721088] Info: Port 443
+[Thu Jan 16 09:52:20 2025] [6166867968] Info: Command: VER=5 CMD=1 RSV=0 ATYP=1
+[Thu Jan 16 09:52:20 2025] [6169161728] Info: Command: VER=5 CMD=1 RSV=0 ATYP=1
+[Thu Jan 16 09:52:20 2025] [6166867968] Info: IP 149.154.175.56
+[Thu Jan 16 09:52:20 2025] [6169161728] Info: IP 149.154.167.222
+[Thu Jan 16 09:52:20 2025] [6166867968] Info: Port 443
+[Thu Jan 16 09:52:20 2025] [6169161728] Info: Port 443
+[Thu Jan 16 09:52:20 2025] [6164574208] Info: Piping data between two sockets...
+[Thu Jan 16 09:52:20 2025] [6164000768] Info: Piping data between two sockets...
+[Thu Jan 16 09:52:20 2025] [6168014848] Info: Piping data between two sockets...
+[Thu Jan 16 09:52:20 2025] [6167441408] Info: Piping data between two sockets...
+[Thu Jan 16 09:52:20 2025] [6169161728] Info: Piping data between two sockets...
+[Thu Jan 16 09:52:20 2025] [6168588288] Info: Piping data between two sockets...
+[Thu Jan 16 09:52:20 2025] [6169735168] Info: Piping data between two sockets...
+[Thu Jan 16 09:52:20 2025] [6165147648] Info: Piping data between two sockets...
+[Thu Jan 16 09:52:20 2025] [6166294528] Info: Piping data between two sockets...
+[Thu Jan 16 09:52:20 2025] [6166867968] Info: Piping data between two sockets...
+[Thu Jan 16 09:52:20 2025] [6165721088] Info: Piping data between two sockets...
+[Thu Jan 16 09:52:28 2025] [6172028928] Info: SOCKS handshake: VER=5, NMETHODS=1
+[Thu Jan 16 09:52:28 2025] [6171455488] Info: SOCKS handshake: VER=5, NMETHODS=1
+[Thu Jan 16 09:52:28 2025] [6171455488] Info: Method AUTH 0
+[Thu Jan 16 09:52:28 2025] [6172028928] Info: Method AUTH 0
+[Thu Jan 16 09:52:28 2025] [6172602368] Info: SOCKS handshake: VER=5, NMETHODS=1
+[Thu Jan 16 09:52:28 2025] [6172602368] Info: Method AUTH 0
+[Thu Jan 16 09:52:28 2025] [6171455488] Info: Command: VER=5 CMD=1 RSV=0 ATYP=1
+[Thu Jan 16 09:52:28 2025] [6172028928] Info: Command: VER=5 CMD=1 RSV=0 ATYP=1
+[Thu Jan 16 09:52:28 2025] [6172602368] Info: Command: VER=5 CMD=1 RSV=0 ATYP=1
+[Thu Jan 16 09:52:28 2025] [6171455488] Info: IP 91.108.56.145
+[Thu Jan 16 09:52:28 2025] [6171455488] Info: Port 443
+[Thu Jan 16 09:52:28 2025] [6172602368] Info: IP 91.108.56.145
+[Thu Jan 16 09:52:28 2025] [6172602368] Info: Port 443
+[Thu Jan 16 09:52:28 2025] [6172028928] Info: IP 91.108.56.145
+[Thu Jan 16 09:52:28 2025] [6172028928] Info: Port 443
+[Thu Jan 16 09:52:28 2025] [6172028928] Info: Piping data between two sockets...
+[Thu Jan 16 09:52:28 2025] [6172602368] Info: Piping data between two sockets...
+[Thu Jan 16 09:52:28 2025] [6171455488] Info: Piping data between two sockets...
+[Thu Jan 16 09:52:28 202] [6171455488] Info: Socket pipe end
+[Thu Jan 16 09:52:28 202] [6172028928] Info: Socket pipe end
+[Thu Jan 16 09:52:28 202] [6172602368] Info: Socket pipe end
+[Thu Jan 16 09:52:47 2025] [6170308608] Critical: Failed to connect to remote server (IPv4) - Operation timed out
+[Thu Jan 16 09:52:49 2025] [6170882048] Critical: Failed to connect to remote server (IPv4) - Operation timed out
+[Thu Jan 16 09:53:15 2025] [6170308608] Info: SOCKS handshake: VER=5, NMETHODS=1
+[Thu Jan 16 09:53:15 2025] [6170308608] Info: Method AUTH 0
+[Thu Jan 16 09:53:15 2025] [6170308608] Info: Command: VER=5 CMD=1 RSV=0 ATYP=1
+[Thu Jan 16 09:53:15 2025] [6170308608] Info: IP 91.108.56.145
+[Thu Jan 16 09:53:15 2025] [6170308608] Info: Port 443
+[Thu Jan 16 09:53:15 2025] [6170308608] Info: Piping data between two sockets...
+[Thu Jan 16 09:53:15 2025] [6170308608] Info: Socket pipe end
+[Thu Jan 16 09:53:42 2025] [6170308608] Info: SOCKS handshake: VER=5, NMETHODS=1
+[Thu Jan 16 09:53:42 2025] [6170308608] Info: Method AUTH 0
+[Thu Jan 16 09:53:42 2025] [6170308608] Info: Command: VER=5 CMD=1 RSV=0 ATYP=1
+[Thu Jan 16 09:53:42 2025] [6170308608] Info: IP 91.108.56.145
+[Thu Jan 16 09:53:42 2025] [6170308608] Info: Port 443
+[Thu Jan 16 09:53:42 2025] [6170308608] Info: Piping data between two sockets...
+[Thu Jan 16 09:53:42 2025] [6170308608] Info: Socket pipe end
+[Thu Jan 16 09:54:33 2025] [6170308608] Info: SOCKS handshake: VER=5, NMETHODS=1
+[Thu Jan 16 09:54:33 2025] [6170308608] Info: Method AUTH 0
+[Thu Jan 16 09:54:33 2025] [6170308608] Info: Command: VER=5 CMD=1 RSV=0 ATYP=1
+[Thu Jan 16 09:54:33 2025] [6170308608] Info: IP 91.108.56.145
+[Thu Jan 16 09:54:33 2025] [6170308608] Info: Port 443
+[Thu Jan 16 09:54:33 2025] [6170308608] Info: Piping data between two sockets...
+[Thu Jan 16 09:54:34 2025] [6170308608] Info: Socket pipe end
+[Thu Jan 16 09:54:38 2025] [6170308608] Info: SOCKS handshake: VER=5, NMETHODS=1
+[Thu Jan 16 09:54:38 2025] [6170308608] Info: Method AUTH 0
+[Thu Jan 16 09:54:38 2025] [6170308608] Info: Command: VER=5 CMD=1 RSV=0 ATYP=1
+[Thu Jan 16 09:54:38 2025] [6170308608] Info: IP 91.108.56.145
+[Thu Jan 16 09:54:38 2025] [6170308608] Info: Port 443
+[Thu Jan 16 09:54:38 2025] [6170308608] Info: Piping data between two sockets...
+[Thu Jan 16 09:54:38 2025] [6170308608] Info: Socket pipe end
+[Thu Jan 16 09:55:13 2025] [6164000768] Info: Socket pipe end
+[Thu Jan 16 09:55:13 2025] [6164574208] Info: Socket pipe end
+[Thu Jan 16 09:55:13 2025] [6166867968] Info: Socket pipe end
+[Thu Jan 16 09:55:13 2025] [6165147648] Info: Socket pipe end
+[Thu Jan 16 09:55:13 2025] [6166294528] Info: Socket pipe end
+[Thu Jan 16 09:55:13 2025] [6165721088] Info: Socket pipe end
+[Thu Jan 16 09:55:13 2025] [6168588288] Info: Socket pipe end
+[Thu Jan 16 09:55:13 2025] [6169735168] Info: Socket pipe end
+[Thu Jan 16 09:55:13 2025] [6167441408] Info: Socket pipe end
+[Thu Jan 16 09:55:13 2025] [6169161728] Info: Socket pipe end
+[Thu Jan 16 09:55:13 2025] [6168014848] Info: Socket pipe end
+[Thu Jan 16 09:55:36 2025] [6164574208] Info: SOCKS handshake: VER=5, NMETHODS=1
+[Thu Jan 16 09:55:36 2025] [6165147648] Info: SOCKS handshake: VER=5, NMETHODS=1
+[Thu Jan 16 09:55:36 2025] [6164000768] Info: SOCKS handshake: VER=5, NMETHODS=1
+[Thu Jan 16 09:55:36 2025] [6164574208] Info: Method AUTH 0
+[Thu Jan 16 09:55:36 2025] [6165147648] Info: Method AUTH 0
+[Thu Jan 16 09:55:36 2025] [6164000768] Info: Method AUTH 0
+[Thu Jan 16 09:55:36 2025] [6165721088] Info: SOCKS handshake: VER=5, NMETHODS=1
+[Thu Jan 16 09:55:36 2025] [6165721088] Info: Method AUTH 0
+[Thu Jan 16 09:55:36 2025] [6166294528] Info: SOCKS handshake: VER=5, NMETHODS=1
+[Thu Jan 16 09:55:36 2025] [6167441408] Info: SOCKS handshake: VER=5, NMETHODS=1
+[Thu Jan 16 09:55:36 2025] [6168014848] Info: SOCKS handshake: VER=5, NMETHODS=1
+[Thu Jan 16 09:55:36 2025] [6168014848] Info: Method AUTH 0
+[Thu Jan 16 09:55:36 2025] [6168588288] Info: SOCKS handshake: VER=5, NMETHODS=1
+[Thu Jan 16 09:55:36 2025] [6169161728] Info: SOCKS handshake: VER=5, NMETHODS=1
+[Thu Jan 16 09:55:36 2025] [6166867968] Info: SOCKS handshake: VER=5, NMETHODS=1
+[Thu Jan 16 09:55:36 2025] [6166867968] Info: Method AUTH 0
+[Thu Jan 16 09:55:36 2025] [6168588288] Info: Method AUTH 0
+[Thu Jan 16 09:55:36 2025] [6167441408] Info: Method AUTH 0
+[Thu Jan 16 09:55:36 2025] [6169161728] Info: Method AUTH 0
+[Thu Jan 16 09:55:36 2025] [6169735168] Info: SOCKS handshake: VER=5, NMETHODS=1
+[Thu Jan 16 09:55:36 2025] [6166294528] Info: Method AUTH 0
+[Thu Jan 16 09:55:36 2025] [6169735168] Info: Method AUTH 0
+[Thu Jan 16 09:55:36 2025] [6164574208] Info: Command: VER=5 CMD=1 RSV=0 ATYP=1
+[Thu Jan 16 09:55:36 2025] [6165147648] Info: Command: VER=5 CMD=1 RSV=0 ATYP=1
+[Thu Jan 16 09:55:36 2025] [6165147648] Info: IP 149.154.175.56
+[Thu Jan 16 09:55:36 2025] [6165147648] Info: Port 443
+[Thu Jan 16 09:55:36 2025] [6164574208] Info: IP 91.108.56.145
+[Thu Jan 16 09:55:36 2025] [6164000768] Info: Command: VER=5 CMD=1 RSV=0 ATYP=1
+[Thu Jan 16 09:55:36 2025] [6164574208] Info: Port 443
+[Thu Jan 16 09:55:36 2025] [6164000768] Info: IP 91.108.56.145
+[Thu Jan 16 09:55:36 2025] [6164000768] Info: Port 443
+[Thu Jan 16 09:55:36 2025] [6166294528] Info: Command: VER=5 CMD=1 RSV=0 ATYP=1
+[Thu Jan 16 09:55:36 2025] [6166867968] Info: Command: VER=5 CMD=1 RSV=0 ATYP=1
+[Thu Jan 16 09:55:36 2025] [6167441408] Info: Command: VER=5 CMD=1 RSV=0 ATYP=1
+[Thu Jan 16 09:55:36 2025] [6168588288] Info: Command: VER=5 CMD=1 RSV=0 ATYP=1
+[Thu Jan 16 09:55:36 2025] [6168588288] Info: IP 91.108.56.145
+[Thu Jan 16 09:55:36 2025] [6165721088] Info: Command: VER=5 CMD=1 RSV=0 ATYP=1
+[Thu Jan 16 09:55:36 2025] [6165721088] Info: IP 149.154.175.56
+[Thu Jan 16 09:55:36 2025] [6167441408] Info: IP 149.154.167.222
+[Thu Jan 16 09:55:36 2025] [6167441408] Info: Port 443
+[Thu Jan 16 09:55:36 2025] [6166867968] Info: IP 149.154.175.56
+[Thu Jan 16 09:55:36 2025] [6166867968] Info: Port 443
+[Thu Jan 16 09:55:36 2025] [6168588288] Info: Port 443
+[Thu Jan 16 09:55:36 2025] [6166294528] Info: IP 149.154.175.56
+[Thu Jan 16 09:55:36 2025] [6166294528] Info: Port 443
+[Thu Jan 16 09:55:36 2025] [6165721088] Info: Port 443
+[Thu Jan 16 09:55:36 2025] [6169161728] Info: Command: VER=5 CMD=1 RSV=0 ATYP=1
+[Thu Jan 16 09:55:36 2025] [6169735168] Info: Command: VER=5 CMD=1 RSV=0 ATYP=1
+[Thu Jan 16 09:55:36 2025] [6168014848] Info: Command: VER=5 CMD=1 RSV=0 ATYP=1
+[Thu Jan 16 09:55:36 2025] [6168014848] Info: IP 149.154.167.222
+[Thu Jan 16 09:55:36 2025] [6168014848] Info: Port 443
+[Thu Jan 16 09:55:36 2025] [6169161728] Info: IP 149.154.167.222
+[Thu Jan 16 09:55:36 2025] [6169161728] Info: Port 443
+[Thu Jan 16 09:55:36 2025] [6169735168] Info: IP 91.108.56.145
+[Thu Jan 16 09:55:36 2025] [6169735168] Info: Port 443
+[Thu Jan 16 09:55:36 2025] [6164000768] Info: Piping data between two sockets...
+[Thu Jan 16 09:55:36 2025] [6164574208] Info: Piping data between two sockets...
+[Thu Jan 16 09:55:36 2025] [6168588288] Info: Piping data between two sockets...
+[Thu Jan 16 09:55:36 2025] [6169735168] Info: Piping data between two sockets...
+[Thu Jan 16 09:55:36 2025] [6167441408] Info: Piping data between two sockets...
+[Thu Jan 16 09:55:36 2025] [6168014848] Info: Piping data between two sockets...
+[Thu Jan 16 09:55:36 2025] [6169161728] Info: Piping data between two sockets...
+[Thu Jan 16 09:55:36 2025] [6166867968] Info: Piping data between two sockets...
+[Thu Jan 16 09:55:36 2025] [6165721088] Info: Piping data between two sockets...
+[Thu Jan 16 09:55:36 2025] [6166294528] Info: Piping data between two sockets...
+[Thu Jan 16 09:55:36 2025] [6165147648] Info: Piping data between two sockets...
